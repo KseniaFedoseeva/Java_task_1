@@ -39,6 +39,27 @@ public class Main {
             System.out.println("Программа выполнена корректно");
         }
 
+        //задача 5
+        int a1 = in.nextInt();
+        int a2 = in.nextInt();
+        double a4;
+        char a3 = in.next().charAt(0);
+
+        switch (a3){
+            case '*': a4 = a1*a2;
+            break;
+            case '/': a4 = a1/a2;
+            break;
+            case '-': a4=a1-a2;
+            break;
+            default: a4=a1+a2;
+            break;
+        }
+        System.out.println(a4);
+
+
+
+
 
 
 
