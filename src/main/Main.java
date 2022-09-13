@@ -1,6 +1,7 @@
 package main;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
@@ -25,6 +26,18 @@ public class Main {
         int sum = average+myArray[0];
 
         System.out.println(sum);
+
+        //задача 4
+        Scanner in = new Scanner(System.in);
+        int x = in.nextInt();
+        int y = in.nextInt();
+        int z = in.nextInt();
+        int av = (x+y+z)/3;
+        System.out.println(av);
+        double dc = Math.floor(av/2);
+        if (dc>3){
+            System.out.println("Программа выполнена корректно");
+        }
 
 
 
