@@ -47,15 +47,21 @@ public class Main {
 
         switch (a3){
             case '*': a4 = a1*a2;
+                System.out.println(a4);
             break;
             case '/': a4 = a1/a2;
+                System.out.println(a4);
             break;
             case '-': a4=a1-a2;
+                System.out.println(a4);
             break;
-            default: a4=a1+a2;
+            case '+': a4=a1+a2;
+                System.out.println(a4);
+                break;
+            default: System.out.println("Введите одну из доступных операций: +, -, /, *");
             break;
         }
-        System.out.println(a4);
+
 
 
 
