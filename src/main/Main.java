@@ -135,6 +135,24 @@ public class Main {
         }
         System.out.println("Сумма нечетных чисел:  "+ sum +" ");
 
+        //Задача 9
+        System.out.println("Введите длину массива");
+        int massDouble = in.nextInt();
+        double sumD = 0.0;
+        double av = 0.0;
+        double[] massD = new double[massDouble];
+        System.out.println("Введите числа в массив");
+        for (int i=0; i<massD.length; i++){
+            massD[i] = in.nextDouble();
+        }
+        for (int i=0; i<massD.length; i++){
+           sumD += massD[i];
+           av = sumD/massD.length;
+        }
+        for (int i=0; i<massD.length; i++){
+            System.out.println(massD[i]*av);
+        }
+
 
 
 
