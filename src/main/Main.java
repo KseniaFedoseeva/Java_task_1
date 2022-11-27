@@ -113,7 +113,7 @@ public class Main {
         System.out.println("Введите длину массива");
         int mas = in.nextInt();
         int[] mass = new int[mas];
-        System.out.println("Введите числа и массив");
+        System.out.println("Введите числа в массив");
         for (int i=0; i<mass.length; i++){
             mass[i] = in.nextInt();
         }
@@ -123,6 +123,18 @@ public class Main {
                 break;
             }
         }
+
+        //Задача 8
+        System.out.println("Введите любое положительное число");
+        int r = in.nextInt();
+        int sum = 0;
+        for(int i=0; i<r; i++){
+            if(i%2 != 0){
+                sum += i;
+            }
+        }
+        System.out.println("Сумма нечетных чисел:  "+ sum +" ");
+
 
 
 
