@@ -64,24 +64,6 @@ public class Main {
 
         //задача 6
 
-//        System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
- //       int a6 = in.nextInt();
-//        int a8;
- //       if(a6==1){
- //           System.out.println("Выберите единицу измерения: 1 - килограмм, 2 - пуд, 3 - унции, 4 - английские фунты");
-  //         int a7 = in.nextInt();
- //           System.out.println("Введите число");
- //           int a9 = in.nextInt();
-  //      }
- //       else {
-  //          System.out.println("Выберите единицу измерения: 1 - метр, 2 - миля, 3 - ярд, 4 - фут");
-   //         a8 = in.nextInt();
-  //      }
- //       System.out.println("Введите количество выбранных единиц");
- //       int a9 = in.nextInt();
-//        if(a8==1){
-//
-//        }
 
         System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
         int a6 = in.nextInt();
@@ -122,6 +104,26 @@ public class Main {
             break;
 
         }
+
+        //Задача 7
+
+        int x = 1;
+        int y = 157;
+        int z = 361;
+        System.out.println("Введите длину массива");
+        int mas = in.nextInt();
+        int[] mass = new int[mas];
+        System.out.println("Введите числа и массив");
+        for (int i=0; i<mass.length; i++){
+            mass[i] = in.nextInt();
+        }
+        for (int i=0; i<mass.length; i++){
+            if(mass[i]==x || mass[i]==y || mass[i]==z){
+                System.out.println("Данное значение имеется в константах");
+                break;
+            }
+        }
+
 
 
 
